@@ -8,9 +8,10 @@ angular.module("ion-datetime-picker", ["ionic"])
                 title: "=",
                 subTitle: "=",
                 buttonOk: "=",
-                buttonCancel: "="
+                buttonCancel: "=",
+                minsInterval: "="
             },
-            controller: function($scope, $ionicPopup, $ionicPickerI18n, $timeout) {
+            controller: function($rootScope,$scope, $ionicPopup, $ionicPickerI18n, $timeout) {
                 $scope.i18n = $ionicPickerI18n;
                 $scope.bind = {};
 
